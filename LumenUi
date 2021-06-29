@@ -1,0 +1,327 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local UiName = Instance.new("TextLabel")
+local Dahood = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local GameName1 = Instance.new("TextLabel")
+local Swagmode = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local SellingTool = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local InfYield1 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local NotSupported = Instance.new("Frame")
+local Error1 = Instance.new("TextLabel")
+local Error2 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(63, 67, 84)
+Main.Position = UDim2.new(0.499271512, 0, 0.5, 0)
+Main.Size = UDim2.new(0, 253, 0, 13)
+Main.Draggable = true
+Main.Active = true
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Main
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.AnchorPoint = Vector2.new(0.5, 0.5)
+TopBar.BackgroundColor3 = Color3.fromRGB(87, 93, 116)
+TopBar.BackgroundTransparency = 1.000
+TopBar.Position = UDim2.new(0.5, 0, 0.0434782617, 0)
+TopBar.Size = UDim2.new(0, 490, 0, 20)
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = TopBar
+
+Version.Name = "Version"
+Version.Parent = TopBar
+Version.AnchorPoint = Vector2.new(0.5, 0.5)
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.0591836721, 0, 0.5, 0)
+Version.Size = UDim2.new(0, 39, 0, 20)
+Version.Font = Enum.Font.IndieFlower
+Version.Text = "V 1.0"
+Version.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version.TextSize = 19.000
+Version.TextTransparency = 1.000
+Version.TextWrapped = true
+
+UiName.Name = "UiName"
+UiName.Parent = TopBar
+UiName.AnchorPoint = Vector2.new(0.5, 0.5)
+UiName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UiName.BackgroundTransparency = 1.000
+UiName.Position = UDim2.new(0.5, 0, 0.5, 0)
+UiName.Size = UDim2.new(0, 200, 0, 20)
+UiName.Font = Enum.Font.IndieFlower
+UiName.Text = "Lumen"
+UiName.TextColor3 = Color3.fromRGB(0, 0, 0)
+UiName.TextSize = 25.000
+UiName.TextTransparency = 1.000
+
+Dahood.Name = "Dahood"
+Dahood.Parent = Main
+Dahood.AnchorPoint = Vector2.new(0.5, 0.5)
+Dahood.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
+Dahood.BackgroundTransparency = 1.000
+Dahood.Position = UDim2.new(0.5, 0, 0.545000017, 0)
+Dahood.Size = UDim2.new(0, 449, 0, 190)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = Dahood
+
+GameName1.Name = "GameName1"
+GameName1.Parent = Dahood
+GameName1.AnchorPoint = Vector2.new(0.5, 0.5)
+GameName1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameName1.BackgroundTransparency = 1.000
+GameName1.Position = UDim2.new(0.86191535, 0, 0.921052635, 0)
+GameName1.Size = UDim2.new(0, 123, 0, 30)
+GameName1.Font = Enum.Font.IndieFlower
+GameName1.Text = "Game : Dahood"
+GameName1.TextColor3 = Color3.fromRGB(0, 0, 0)
+GameName1.TextScaled = true
+GameName1.TextSize = 14.000
+GameName1.TextTransparency = 1.000
+GameName1.TextWrapped = true
+
+Swagmode.Name = "Swagmode"
+Swagmode.Parent = Dahood
+Swagmode.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+Swagmode.BackgroundTransparency = 1.000
+Swagmode.Position = UDim2.new(0.0222717095, 0, 0.0526315868, 0)
+Swagmode.Size = UDim2.new(0, 150, 0, 50)
+Swagmode.Font = Enum.Font.IndieFlower
+Swagmode.Text = "Swagmode"
+Swagmode.TextColor3 = Color3.fromRGB(0, 0, 0)
+Swagmode.TextScaled = true
+Swagmode.TextSize = 14.000
+Swagmode.TextTransparency = 1.000
+Swagmode.TextWrapped = true
+Swagmode.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = Swagmode
+
+SellingTool.Name = "SellingTool"
+SellingTool.Parent = Dahood
+SellingTool.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+SellingTool.BackgroundTransparency = 1.000
+SellingTool.Position = UDim2.new(0.0222717095, 0, 0.368421048, 0)
+SellingTool.Size = UDim2.new(0, 150, 0, 50)
+SellingTool.Font = Enum.Font.IndieFlower
+SellingTool.Text = "Auto Drop"
+SellingTool.TextColor3 = Color3.fromRGB(0, 0, 0)
+SellingTool.TextScaled = true
+SellingTool.TextSize = 14.000
+SellingTool.TextTransparency = 1.000
+SellingTool.TextWrapped = true
+SellingTool.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = SellingTool
+
+InfYield1.Name = "InfYield1"
+InfYield1.Parent = Dahood
+InfYield1.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+InfYield1.BackgroundTransparency = 1.000
+InfYield1.Position = UDim2.new(0.0222717095, 0, 0.684210539, 0)
+InfYield1.Size = UDim2.new(0, 150, 0, 50)
+InfYield1.Font = Enum.Font.IndieFlower
+InfYield1.Text = "Infinite Yield"
+InfYield1.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfYield1.TextScaled = true
+InfYield1.TextSize = 14.000
+InfYield1.TextTransparency = 1.000
+InfYield1.TextWrapped = true
+InfYield1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = InfYield1
+
+NotSupported.Name = "NotSupported"
+NotSupported.Parent = Main
+NotSupported.AnchorPoint = Vector2.new(0.5, 0.5)
+NotSupported.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
+NotSupported.BackgroundTransparency = 1.000
+NotSupported.Position = UDim2.new(0.499530673, 0, 0.544648826, 0)
+NotSupported.Size = UDim2.new(0, 449, 0, 190)
+
+Error1.Name = "Error1"
+Error1.Parent = NotSupported
+Error1.AnchorPoint = Vector2.new(0.5, 0.5)
+Error1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Error1.BackgroundTransparency = 1.000
+Error1.Position = UDim2.new(0.498933911, 0, 0.315789461, 0)
+Error1.Size = UDim2.new(0, 200, 0, 50)
+Error1.Font = Enum.Font.IndieFlower
+Error1.Text = "Whoops!"
+Error1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Error1.TextScaled = true
+Error1.TextSize = 14.000
+Error1.TextTransparency = 1.000
+Error1.TextWrapped = true
+
+Error2.Name = "Error2"
+Error2.Parent = NotSupported
+Error2.AnchorPoint = Vector2.new(0.5, 0.5)
+Error2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Error2.BackgroundTransparency = 1.000
+Error2.Position = UDim2.new(0.501066089, 0, 0.578947365, 0)
+Error2.Size = UDim2.new(0, 460, 0, 50)
+Error2.Font = Enum.Font.IndieFlower
+Error2.Text = "It looks like the game you are currently playing is not compatible with this ui."
+Error2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Error2.TextScaled = true
+Error2.TextSize = 30.000
+Error2.TextTransparency = 1.000
+Error2.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = NotSupported
+
+-- Scripts:
+
+local function LQCBQZ_fake_script() -- Main.IntroAnimation 
+	local script = Instance.new('LocalScript', Main)
+
+	wait(2)
+	script.Parent:TweenSize(UDim2.new(0,253,0,432))
+	wait(1.1)
+	script.Parent:TweenSize(UDim2.new(0,470,0,230))
+	
+end
+coroutine.wrap(LQCBQZ_fake_script)()
+local function FRJDGMY_fake_script() -- Main.Notification 
+	local script = Instance.new('LocalScript', Main)
+
+	wait(5)
+	local function callback(Text)
+		if Text == "Button1 text" then
+			print ("Answer")
+		elseif Text == ("Button2 text") then
+			print ("Answer2")
+		end
+	end
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Successfully loaded!";
+		Text = "Thank you for using Lumen!";
+		Icon = "";
+		Duration = 5;
+	
+		Callback = NotificationBindable;
+	})
+	
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "!";
+		Text = "Z to close.";
+		Icon = "";
+		Duration = 5;
+		Callback = NotificationBindable;
+	})
+	
+end
+coroutine.wrap(FRJDGMY_fake_script)()
+local function IXJFAS_fake_script() -- Main.KeybindToggle 
+	local script = Instance.new('LocalScript', Main)
+
+	local open = true
+	local keystatus
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	keystatus=mouse.KeyDown:connect(function(key)
+		if key == "z" then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+					else
+				script.Parent.Visible = true
+	end
+	end
+	end)
+end
+coroutine.wrap(IXJFAS_fake_script)()
+local function LSGZI_fake_script() -- TopBar.InsideAnimation 
+	local script = Instance.new('LocalScript', TopBar)
+
+	wait(3.65)
+	local Info = TweenInfo.new(1)
+	local Tween = game:GetService("TweenService"):Create(script.Parent,Info,{BackgroundTransparency=0})
+	Tween:Play()
+	wait(.5)
+	local Tween1 = game:GetService("TweenService"):Create(script.Parent.UiName,Info,{TextTransparency=0})
+	local Tween2 = game:GetService("TweenService"):Create(script.Parent.Version,Info,{TextTransparency=0})
+	Tween1:Play()
+	Tween2:Play()
+end
+coroutine.wrap(LSGZI_fake_script)()
+local function FYXS_fake_script() -- Dahood.PlaceIDFunction1 
+	local script = Instance.new('LocalScript', Dahood)
+
+	wait(5)
+	if game.PlaceId ==2788229376 then
+		local Info = TweenInfo.new(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent,Info,{BackgroundTransparency=0})
+		local Tween6 = game:GetService("TweenService"):Create(script.Parent.GameName1,Info,{TextTransparency=0})
+		Tween:Play()
+		Tween6:Play()
+		wait(.1)
+		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Swagmode,Info,{TextTransparency=0})
+		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Swagmode,Info,{BackgroundTransparency=0})
+		Tween7:Play()
+		Tween8:Play()
+		wait(.2)
+		local Tween9 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{TextTransparency=0})
+		local Tween10 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{BackgroundTransparency=0})
+		Tween9:Play()
+		Tween10:Play()
+		wait(.3)
+		local Tween11 = game:GetService("TweenService"):Create(script.Parent.InfYield1,Info,{TextTransparency=0})
+		local Tween12 = game:GetService("TweenService"):Create(script.Parent.InfYield1,Info,{BackgroundTransparency=0})
+		Tween11:Play()
+		Tween12:Play()
+		
+	else
+		local Info = TweenInfo.new(1)
+		local Tween3 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported,Info,{BackgroundTransparency=0})
+		local Tween4 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error1,Info,{TextTransparency=0})
+		local Tween5 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error2,Info,{TextTransparency=0})
+		Tween3:Play()
+		Tween4:Play()
+		Tween5:Play()
+	end
+	
+end
+coroutine.wrap(FYXS_fake_script)()
