@@ -27,6 +27,11 @@ local NotSupported = Instance.new("Frame")
 local Error1 = Instance.new("TextLabel")
 local Error2 = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
+local NaturalDisaster = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Darkware = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local GameName2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -127,7 +132,6 @@ Swagmode.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end)
 
-
 UICorner_4.CornerRadius = UDim.new(0, 10)
 UICorner_4.Parent = Swagmode
 
@@ -169,7 +173,6 @@ InfYield1.TextWrapped = true
 InfYield1.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-
 
 UICorner_6.CornerRadius = UDim.new(0, 10)
 UICorner_6.Parent = InfYield1
@@ -213,7 +216,6 @@ PunchFarm.TextWrapped = true
 PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
 end)
-
 
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = PunchFarm
@@ -259,9 +261,56 @@ Error2.TextWrapped = true
 UICorner_9.CornerRadius = UDim.new(0, 10)
 UICorner_9.Parent = NotSupported
 
+NaturalDisaster.Name = "NaturalDisaster"
+NaturalDisaster.Parent = Main
+NaturalDisaster.AnchorPoint = Vector2.new(0.5, 0.5)
+NaturalDisaster.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
+NaturalDisaster.BackgroundTransparency = 1.000
+NaturalDisaster.Position = UDim2.new(0.5, 0, 0.545000017, 0)
+NaturalDisaster.Size = UDim2.new(0, 449, 0, 190)
+
+UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.Parent = NaturalDisaster
+
+Darkware.Name = "Darkware"
+Darkware.Parent = NaturalDisaster
+Darkware.AnchorPoint = Vector2.new(0.5, 0.5)
+Darkware.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+Darkware.BackgroundTransparency = 1.000
+Darkware.Position = UDim2.new(0.188999996, 0, 0.184, 0)
+Darkware.Size = UDim2.new(0, 150, 0, 50)
+Darkware.Font = Enum.Font.IndieFlower
+Darkware.Text = "Darkware"
+Darkware.TextColor3 = Color3.fromRGB(0, 0, 0)
+Darkware.TextScaled = true
+Darkware.TextSize = 14.000
+Darkware.TextTransparency = 1.000
+Darkware.TextWrapped = true
+Darkware.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('loadstring(game:HttpGet(("https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader"), true))()'))()
+end)
+
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = Darkware
+
+GameName2.Name = "GameName2"
+GameName2.Parent = NaturalDisaster
+GameName2.AnchorPoint = Vector2.new(0.5, 0.5)
+GameName2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameName2.BackgroundTransparency = 1.000
+GameName2.Position = UDim2.new(0.86191535, 0, 0.921052635, 0)
+GameName2.Size = UDim2.new(0, 123, 0, 30)
+GameName2.Font = Enum.Font.IndieFlower
+GameName2.Text = "Game : Natural Disaster Survival"
+GameName2.TextColor3 = Color3.fromRGB(0, 0, 0)
+GameName2.TextScaled = true
+GameName2.TextSize = 14.000
+GameName2.TextTransparency = 1.000
+GameName2.TextWrapped = true
+
 -- Scripts:
 
-local function YRJYPYE_fake_script() -- Main.IntroAnimation 
+local function LFMI_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -270,8 +319,8 @@ local function YRJYPYE_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(YRJYPYE_fake_script)()
-local function GDEWXJB_fake_script() -- Main.Notification 
+coroutine.wrap(LFMI_fake_script)()
+local function JREF_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -308,8 +357,8 @@ local function GDEWXJB_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(GDEWXJB_fake_script)()
-local function SXWUKF_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(JREF_fake_script)()
+local function KYJSNA_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -325,8 +374,8 @@ local function SXWUKF_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(SXWUKF_fake_script)()
-local function ZIFP_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(KYJSNA_fake_script)()
+local function RKHZJXG_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -339,8 +388,8 @@ local function ZIFP_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(ZIFP_fake_script)()
-local function HLFNRDJ_fake_script() -- Dahood.PlaceIDFunction1 
+coroutine.wrap(RKHZJXG_fake_script)()
+local function BWIOQ_fake_script() -- Dahood.PlaceIDFunction1 
 	local script = Instance.new('LocalScript', Dahood)
 
 	wait(5)
@@ -387,4 +436,32 @@ local function HLFNRDJ_fake_script() -- Dahood.PlaceIDFunction1
 	end
 	
 end
-coroutine.wrap(HLFNRDJ_fake_script)()
+coroutine.wrap(BWIOQ_fake_script)()
+local function GSWDXN_fake_script() -- NaturalDisaster.PlaceIDFunction 
+	local script = Instance.new('LocalScript', NaturalDisaster)
+
+	wait(5)
+	if game.PlaceId ==189707 then
+		local Info = TweenInfo.new(1)
+		local Tween = game:GetService("TweenService"):Create(script.Parent,Info,{BackgroundTransparency=0})
+		local Tween6 = game:GetService("TweenService"):Create(script.Parent.GameName2,Info,{TextTransparency=0})
+		Tween:Play()
+		Tween6:Play()
+		wait(.1)
+		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Darkware,Info,{BackgroundTransparency=0})
+		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Darkware,Info,{TextTransparency=0})
+		Tween7:Play()
+		Tween8:Play()
+	
+	else
+		local Info = TweenInfo.new(1)
+		local Tween3 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported,Info,{BackgroundTransparency=0})
+		local Tween4 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error1,Info,{TextTransparency=0})
+		local Tween5 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error2,Info,{TextTransparency=0})
+		Tween3:Play()
+		Tween4:Play()
+		Tween5:Play()
+	end
+	
+end
+coroutine.wrap(GSWDXN_fake_script)()
