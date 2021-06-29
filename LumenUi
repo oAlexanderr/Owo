@@ -116,6 +116,7 @@ GameName1.TextWrapped = true
 
 Swagmode.Name = "Swagmode"
 Swagmode.Parent = Dahood
+Swagmode.Active = false
 Swagmode.AnchorPoint = Vector2.new(0.5, 0.5)
 Swagmode.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 Swagmode.BackgroundTransparency = 1.000
@@ -137,6 +138,7 @@ UICorner_4.Parent = Swagmode
 
 SellingTool.Name = "SellingTool"
 SellingTool.Parent = Dahood
+SellingTool.Active = false
 SellingTool.AnchorPoint = Vector2.new(0.5, 0.5)
 SellingTool.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 SellingTool.BackgroundTransparency = 1.000
@@ -153,12 +155,12 @@ SellingTool.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
 end)
 
-
 UICorner_5.CornerRadius = UDim.new(0, 10)
 UICorner_5.Parent = SellingTool
 
 InfYield1.Name = "InfYield1"
 InfYield1.Parent = Dahood
+InfYield1.Active = false
 InfYield1.AnchorPoint = Vector2.new(0.5, 0.5)
 InfYield1.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 InfYield1.BackgroundTransparency = 1.000
@@ -180,6 +182,7 @@ UICorner_6.Parent = InfYield1
 
 ArmorRefill.Name = "ArmorRefill"
 ArmorRefill.Parent = Dahood
+ArmorRefill.Active = false
 ArmorRefill.AnchorPoint = Vector2.new(0.5, 0.5)
 ArmorRefill.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 ArmorRefill.BackgroundTransparency = 1.000
@@ -201,6 +204,7 @@ UICorner_7.Parent = ArmorRefill
 
 PunchFarm.Name = "PunchFarm"
 PunchFarm.Parent = Dahood
+PunchFarm.Active = false
 PunchFarm.AnchorPoint = Vector2.new(0.5, 0.5)
 PunchFarm.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 PunchFarm.BackgroundTransparency = 1.000
@@ -216,6 +220,7 @@ PunchFarm.TextWrapped = true
 PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
 end)
+
 
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = PunchFarm
@@ -274,6 +279,7 @@ UICorner_10.Parent = NaturalDisaster
 
 Darkware.Name = "Darkware"
 Darkware.Parent = NaturalDisaster
+Darkware.Active = false
 Darkware.AnchorPoint = Vector2.new(0.5, 0.5)
 Darkware.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 Darkware.BackgroundTransparency = 1.000
@@ -310,7 +316,7 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function HRGUPP_fake_script() -- Main.IntroAnimation 
+local function NKAN_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -319,8 +325,8 @@ local function HRGUPP_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(HRGUPP_fake_script)()
-local function LRHQFTM_fake_script() -- Main.Notification 
+coroutine.wrap(NKAN_fake_script)()
+local function CIAEBUA_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -357,8 +363,8 @@ local function LRHQFTM_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(LRHQFTM_fake_script)()
-local function OUFAKXX_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(CIAEBUA_fake_script)()
+local function KEQUDWT_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -374,8 +380,8 @@ local function OUFAKXX_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(OUFAKXX_fake_script)()
-local function OFEYDI_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(KEQUDWT_fake_script)()
+local function VIHQO_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -388,12 +394,17 @@ local function OFEYDI_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(OFEYDI_fake_script)()
-local function RYEJA_fake_script() -- Main.DahoodFunction 
+coroutine.wrap(VIHQO_fake_script)()
+local function OUTVS_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
 	if game.PlaceId ==2788229376 then
+		script.Parent.Dahood.ArmorRefill.Active = true
+		script.Parent.Dahood.Infyield1.Active = true
+		script.Parent.Dahood.PunchFarm.Active = true
+		script.Parent.Dahood.SellingTool.Active = true
+		script.Parent.Dahood.Swagmode.Active = true
 		local Info = TweenInfo.new(1)
 		local Tween = game:GetService("TweenService"):Create(script.Parent.Dahood,Info,{BackgroundTransparency=0})
 		local Tween6 = game:GetService("TweenService"):Create(script.Parent.Dahood.GameName1,Info,{TextTransparency=0})
@@ -427,6 +438,7 @@ local function RYEJA_fake_script() -- Main.DahoodFunction
 		
 	else
 		if game.PlaceId ==189707 then
+			script.parent.NaturalDisaster.Darkware.Active = true
 			local Info = TweenInfo.new(1)
 			local Tween = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
 			local Tween6 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
@@ -448,4 +460,4 @@ local function RYEJA_fake_script() -- Main.DahoodFunction
 		end
 		end
 end
-coroutine.wrap(RYEJA_fake_script)()
+coroutine.wrap(OUTVS_fake_script)()
