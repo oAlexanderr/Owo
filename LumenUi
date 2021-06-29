@@ -217,6 +217,7 @@ PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
 end)
 
+
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = PunchFarm
 
@@ -286,9 +287,10 @@ Darkware.TextScaled = true
 Darkware.TextSize = 14.000
 Darkware.TextTransparency = 1.000
 Darkware.TextWrapped = true
-Darkware.MouseButton1Down:connect(function()
+PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
 end)
+
 
 UICorner_11.CornerRadius = UDim.new(0, 10)
 UICorner_11.Parent = Darkware
@@ -310,7 +312,7 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function LFMI_fake_script() -- Main.IntroAnimation 
+local function XHLYW_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -319,8 +321,8 @@ local function LFMI_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(LFMI_fake_script)()
-local function JREF_fake_script() -- Main.Notification 
+coroutine.wrap(XHLYW_fake_script)()
+local function ZOJTXPU_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -357,8 +359,8 @@ local function JREF_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(JREF_fake_script)()
-local function KYJSNA_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(ZOJTXPU_fake_script)()
+local function WGUY_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -374,8 +376,8 @@ local function KYJSNA_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(KYJSNA_fake_script)()
-local function RKHZJXG_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(WGUY_fake_script)()
+local function MQLC_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -388,8 +390,8 @@ local function RKHZJXG_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(RKHZJXG_fake_script)()
-local function BWIOQ_fake_script() -- Dahood.PlaceIDFunction1 
+coroutine.wrap(MQLC_fake_script)()
+local function IIODMG_fake_script() -- Dahood.PlaceIDFunction1 
 	local script = Instance.new('LocalScript', Dahood)
 
 	wait(5)
@@ -435,25 +437,23 @@ local function BWIOQ_fake_script() -- Dahood.PlaceIDFunction1
 		Tween5:Play()
 	end
 	
-end
-coroutine.wrap(BWIOQ_fake_script)()
-local function GSWDXN_fake_script() -- NaturalDisaster.PlaceIDFunction 
-	local script = Instance.new('LocalScript', NaturalDisaster)
-
+	
+	
 	wait(5)
 	if game.PlaceId ==189707 then
 		local Info = TweenInfo.new(1)
-		local Tween = game:GetService("TweenService"):Create(script.Parent,Info,{BackgroundTransparency=0})
-		local Tween6 = game:GetService("TweenService"):Create(script.Parent.GameName2,Info,{TextTransparency=0})
+		local Tween = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
+		local Tween6 = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
 		Tween:Play()
 		Tween6:Play()
 		wait(.1)
-		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Darkware,Info,{BackgroundTransparency=0})
-		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Darkware,Info,{TextTransparency=0})
+		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster.Darkware,Info,{BackgroundTransparency=0})
+		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster.Darkware,Info,{TextTransparency=0})
 		Tween7:Play()
 		Tween8:Play()
 	
 	else
+		wait(1)
 		local Info = TweenInfo.new(1)
 		local Tween3 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported,Info,{BackgroundTransparency=0})
 		local Tween4 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error1,Info,{TextTransparency=0})
@@ -464,4 +464,4 @@ local function GSWDXN_fake_script() -- NaturalDisaster.PlaceIDFunction
 	end
 	
 end
-coroutine.wrap(GSWDXN_fake_script)()
+coroutine.wrap(IIODMG_fake_script)()
