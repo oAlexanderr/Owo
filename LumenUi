@@ -153,6 +153,7 @@ SellingTool.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
 end)
 
+
 UICorner_5.CornerRadius = UDim.new(0, 10)
 UICorner_5.Parent = SellingTool
 
@@ -215,7 +216,6 @@ PunchFarm.TextWrapped = true
 PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
 end)
-
 
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = PunchFarm
@@ -310,7 +310,7 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function SRUVNU_fake_script() -- Main.IntroAnimation 
+local function HRGUPP_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -319,8 +319,8 @@ local function SRUVNU_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(SRUVNU_fake_script)()
-local function PQPDXM_fake_script() -- Main.Notification 
+coroutine.wrap(HRGUPP_fake_script)()
+local function LRHQFTM_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -357,8 +357,8 @@ local function PQPDXM_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(PQPDXM_fake_script)()
-local function LVXGQ_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(LRHQFTM_fake_script)()
+local function OUFAKXX_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -374,8 +374,8 @@ local function LVXGQ_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(LVXGQ_fake_script)()
-local function EZEP_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(OUFAKXX_fake_script)()
+local function OFEYDI_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -388,8 +388,8 @@ local function EZEP_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(EZEP_fake_script)()
-local function NHVTSJI_fake_script() -- Main.DahoodFunction 
+coroutine.wrap(OFEYDI_fake_script)()
+local function RYEJA_fake_script() -- Main.DahoodFunction 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -426,41 +426,26 @@ local function NHVTSJI_fake_script() -- Main.DahoodFunction
 		Tween14:Play()
 		
 	else
-		local Info = TweenInfo.new(1)
-		local Tween3 = game:GetService("TweenService"):Create(script.Parent.NotSupported,Info,{BackgroundTransparency=0})
-		local Tween4 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error1,Info,{TextTransparency=0})
-		local Tween5 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error2,Info,{TextTransparency=0})
-		Tween3:Play()
-		Tween4:Play()
-		Tween5:Play()
-	end
+		if game.PlaceId ==189707 then
+			local Info = TweenInfo.new(1)
+			local Tween = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
+			local Tween6 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
+			Tween:Play()
+			Tween6:Play()
+			wait(.1)
+			local Tween7 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.Darkware,Info,{BackgroundTransparency=0})
+			local Tween8 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.Darkware,Info,{TextTransparency=0})
+			Tween7:Play()
+			Tween8:Play()
+		else
+			local Info = TweenInfo.new(1)
+			local Tween3 = game:GetService("TweenService"):Create(script.Parent.NotSupported,Info,{BackgroundTransparency=0})
+			local Tween4 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error1,Info,{TextTransparency=0})
+			local Tween5 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error2,Info,{TextTransparency=0})
+			Tween3:Play()
+			Tween4:Play()
+			Tween5:Play()
+		end
+		end
 end
-coroutine.wrap(NHVTSJI_fake_script)()
-local function VEAC_fake_script() -- Main.NaturalDisasterFunction 
-	local script = Instance.new('LocalScript', Main)
-
-	wait(5)
-	if game.PlaceId ==189707 then
-		local Info = TweenInfo.new(1)
-		local Tween = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
-		local Tween6 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
-		Tween:Play()
-		Tween6:Play()
-		wait(.1)
-		local Tween7 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.Darkware,Info,{BackgroundTransparency=0})
-		local Tween8 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.Darkware,Info,{TextTransparency=0})
-		Tween7:Play()
-		Tween8:Play()
-	
-	else
-		wait(1)
-		local Info = TweenInfo.new(1)
-		local Tween3 = game:GetService("TweenService"):Create(script.Parent.NotSupported,Info,{BackgroundTransparency=0})
-		local Tween4 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error1,Info,{TextTransparency=0})
-		local Tween5 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error2,Info,{TextTransparency=0})
-		Tween3:Play()
-		Tween4:Play()
-		Tween5:Play()
-	end
-end
-coroutine.wrap(VEAC_fake_script)()
+coroutine.wrap(RYEJA_fake_script)()
