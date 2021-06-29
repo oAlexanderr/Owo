@@ -195,7 +195,6 @@ ArmorRefill.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/ArmorRefil'))()
 end)
 
-
 UICorner_7.CornerRadius = UDim.new(0, 10)
 UICorner_7.Parent = ArmorRefill
 
@@ -287,10 +286,9 @@ Darkware.TextScaled = true
 Darkware.TextSize = 14.000
 Darkware.TextTransparency = 1.000
 Darkware.TextWrapped = true
-PunchFarm.MouseButton1Down:connect(function()
+Darkware.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
 end)
-
 
 UICorner_11.CornerRadius = UDim.new(0, 10)
 UICorner_11.Parent = Darkware
@@ -312,7 +310,7 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function XHLYW_fake_script() -- Main.IntroAnimation 
+local function SRUVNU_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -321,8 +319,8 @@ local function XHLYW_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(XHLYW_fake_script)()
-local function ZOJTXPU_fake_script() -- Main.Notification 
+coroutine.wrap(SRUVNU_fake_script)()
+local function PQPDXM_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -359,8 +357,8 @@ local function ZOJTXPU_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(ZOJTXPU_fake_script)()
-local function WGUY_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(PQPDXM_fake_script)()
+local function LVXGQ_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -376,8 +374,8 @@ local function WGUY_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(WGUY_fake_script)()
-local function MQLC_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(LVXGQ_fake_script)()
+local function EZEP_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -390,78 +388,79 @@ local function MQLC_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(MQLC_fake_script)()
-local function IIODMG_fake_script() -- Dahood.PlaceIDFunction1 
-	local script = Instance.new('LocalScript', Dahood)
+coroutine.wrap(EZEP_fake_script)()
+local function NHVTSJI_fake_script() -- Main.DahoodFunction 
+	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
 	if game.PlaceId ==2788229376 then
 		local Info = TweenInfo.new(1)
-		local Tween = game:GetService("TweenService"):Create(script.Parent,Info,{BackgroundTransparency=0})
-		local Tween6 = game:GetService("TweenService"):Create(script.Parent.GameName1,Info,{TextTransparency=0})
+		local Tween = game:GetService("TweenService"):Create(script.Parent.Dahood,Info,{BackgroundTransparency=0})
+		local Tween6 = game:GetService("TweenService"):Create(script.Parent.Dahood.GameName1,Info,{TextTransparency=0})
 		Tween:Play()
 		Tween6:Play()
 		wait(.1)
-		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Swagmode,Info,{TextTransparency=0})
-		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Swagmode,Info,{BackgroundTransparency=0})
+		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Dahood.Swagmode,Info,{TextTransparency=0})
+		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Dahood.Swagmode,Info,{BackgroundTransparency=0})
 		Tween7:Play()
 		Tween8:Play()
 		wait(.2)
-		local Tween11 = game:GetService("TweenService"):Create(script.Parent.InfYield1,Info,{TextTransparency=0})
-		local Tween12 = game:GetService("TweenService"):Create(script.Parent.InfYield1,Info,{BackgroundTransparency=0})
+		local Tween11 = game:GetService("TweenService"):Create(script.Parent.Dahood.InfYield1,Info,{TextTransparency=0})
+		local Tween12 = game:GetService("TweenService"):Create(script.Parent.Dahood.InfYield1,Info,{BackgroundTransparency=0})
 		Tween11:Play()
 		Tween12:Play()
 		wait(.3)
-		local Tween9 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{TextTransparency=0})
-		local Tween10 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{BackgroundTransparency=0})
+		local Tween9 = game:GetService("TweenService"):Create(script.Parent.Dahood.SellingTool,Info,{TextTransparency=0})
+		local Tween10 = game:GetService("TweenService"):Create(script.Parent.Dahood.SellingTool,Info,{BackgroundTransparency=0})
 		Tween9:Play()
 		Tween10:Play()
 		wait(.4)
-		local Tween11 = game:GetService("TweenService"):Create(script.Parent.ArmorRefill,Info,{TextTransparency=0})
-		local Tween12 = game:GetService("TweenService"):Create(script.Parent.ArmorRefill,Info,{BackgroundTransparency=0})
+		local Tween11 = game:GetService("TweenService"):Create(script.Parent.Dahood.ArmorRefill,Info,{TextTransparency=0})
+		local Tween12 = game:GetService("TweenService"):Create(script.Parent.Dahood.ArmorRefill,Info,{BackgroundTransparency=0})
 		Tween11:Play()
 		Tween12:Play()
 		wait(.5)
-		local Tween13 = game:GetService("TweenService"):Create(script.Parent.PunchFarm,Info,{TextTransparency=0})
-		local Tween14 = game:GetService("TweenService"):Create(script.Parent.PunchFarm,Info,{BackgroundTransparency=0})
+		local Tween13 = game:GetService("TweenService"):Create(script.Parent.Dahood.PunchFarm,Info,{TextTransparency=0})
+		local Tween14 = game:GetService("TweenService"):Create(script.Parent.Dahood.PunchFarm,Info,{BackgroundTransparency=0})
 		Tween13:Play()
 		Tween14:Play()
 		
 	else
 		local Info = TweenInfo.new(1)
-		local Tween3 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported,Info,{BackgroundTransparency=0})
-		local Tween4 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error1,Info,{TextTransparency=0})
-		local Tween5 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error2,Info,{TextTransparency=0})
+		local Tween3 = game:GetService("TweenService"):Create(script.Parent.NotSupported,Info,{BackgroundTransparency=0})
+		local Tween4 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error1,Info,{TextTransparency=0})
+		local Tween5 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error2,Info,{TextTransparency=0})
 		Tween3:Play()
 		Tween4:Play()
 		Tween5:Play()
 	end
-	
-	
-	
+end
+coroutine.wrap(NHVTSJI_fake_script)()
+local function VEAC_fake_script() -- Main.NaturalDisasterFunction 
+	local script = Instance.new('LocalScript', Main)
+
 	wait(5)
 	if game.PlaceId ==189707 then
 		local Info = TweenInfo.new(1)
-		local Tween = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
-		local Tween6 = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
+		local Tween = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
+		local Tween6 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
 		Tween:Play()
 		Tween6:Play()
 		wait(.1)
-		local Tween7 = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster.Darkware,Info,{BackgroundTransparency=0})
-		local Tween8 = game:GetService("TweenService"):Create(script.Parent.Parent.NaturalDisaster.Darkware,Info,{TextTransparency=0})
+		local Tween7 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.Darkware,Info,{BackgroundTransparency=0})
+		local Tween8 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.Darkware,Info,{TextTransparency=0})
 		Tween7:Play()
 		Tween8:Play()
 	
 	else
 		wait(1)
 		local Info = TweenInfo.new(1)
-		local Tween3 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported,Info,{BackgroundTransparency=0})
-		local Tween4 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error1,Info,{TextTransparency=0})
-		local Tween5 = game:GetService("TweenService"):Create(script.Parent.Parent.NotSupported.Error2,Info,{TextTransparency=0})
+		local Tween3 = game:GetService("TweenService"):Create(script.Parent.NotSupported,Info,{BackgroundTransparency=0})
+		local Tween4 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error1,Info,{TextTransparency=0})
+		local Tween5 = game:GetService("TweenService"):Create(script.Parent.NotSupported.Error2,Info,{TextTransparency=0})
 		Tween3:Play()
 		Tween4:Play()
 		Tween5:Play()
 	end
-	
 end
-coroutine.wrap(IIODMG_fake_script)()
+coroutine.wrap(VEAC_fake_script)()
