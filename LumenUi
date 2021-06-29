@@ -19,10 +19,14 @@ local SellingTool = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local InfYield1 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local ArmorRefill = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local PunchFarm = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 local NotSupported = Instance.new("Frame")
 local Error1 = Instance.new("TextLabel")
 local Error2 = Instance.new("TextLabel")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
@@ -107,9 +111,10 @@ GameName1.TextWrapped = true
 
 Swagmode.Name = "Swagmode"
 Swagmode.Parent = Dahood
+Swagmode.AnchorPoint = Vector2.new(0.5, 0.5)
 Swagmode.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 Swagmode.BackgroundTransparency = 1.000
-Swagmode.Position = UDim2.new(0.0222717095, 0, 0.0526315868, 0)
+Swagmode.Position = UDim2.new(0.189309567, 0, 0.184210539, 0)
 Swagmode.Size = UDim2.new(0, 150, 0, 50)
 Swagmode.Font = Enum.Font.IndieFlower
 Swagmode.Text = "Swagmode"
@@ -122,14 +127,16 @@ Swagmode.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end)
 
+
 UICorner_4.CornerRadius = UDim.new(0, 10)
 UICorner_4.Parent = Swagmode
 
 SellingTool.Name = "SellingTool"
 SellingTool.Parent = Dahood
+SellingTool.AnchorPoint = Vector2.new(0.5, 0.5)
 SellingTool.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 SellingTool.BackgroundTransparency = 1.000
-SellingTool.Position = UDim2.new(0.0222717095, 0, 0.368421048, 0)
+SellingTool.Position = UDim2.new(0.189309552, 0, 0.815789461, 0)
 SellingTool.Size = UDim2.new(0, 150, 0, 50)
 SellingTool.Font = Enum.Font.IndieFlower
 SellingTool.Text = "Auto Drop"
@@ -147,9 +154,10 @@ UICorner_5.Parent = SellingTool
 
 InfYield1.Name = "InfYield1"
 InfYield1.Parent = Dahood
+InfYield1.AnchorPoint = Vector2.new(0.5, 0.5)
 InfYield1.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 InfYield1.BackgroundTransparency = 1.000
-InfYield1.Position = UDim2.new(0.0222717095, 0, 0.684210539, 0)
+InfYield1.Position = UDim2.new(0.189309567, 0, 0.5, 0)
 InfYield1.Size = UDim2.new(0, 150, 0, 50)
 InfYield1.Font = Enum.Font.IndieFlower
 InfYield1.Text = "Infinite Yield"
@@ -162,8 +170,53 @@ InfYield1.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
+
 UICorner_6.CornerRadius = UDim.new(0, 10)
 UICorner_6.Parent = InfYield1
+
+ArmorRefill.Name = "ArmorRefill"
+ArmorRefill.Parent = Dahood
+ArmorRefill.AnchorPoint = Vector2.new(0.5, 0.5)
+ArmorRefill.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+ArmorRefill.BackgroundTransparency = 1.000
+ArmorRefill.Position = UDim2.new(0.545657039, 0, 0.184210539, 0)
+ArmorRefill.Size = UDim2.new(0, 150, 0, 50)
+ArmorRefill.Font = Enum.Font.IndieFlower
+ArmorRefill.Text = "Auto Armor Refill"
+ArmorRefill.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArmorRefill.TextScaled = true
+ArmorRefill.TextSize = 14.000
+ArmorRefill.TextTransparency = 1.000
+ArmorRefill.TextWrapped = true
+ArmorRefill.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/ArmorRefil'))()
+end)
+
+
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = ArmorRefill
+
+PunchFarm.Name = "PunchFarm"
+PunchFarm.Parent = Dahood
+PunchFarm.AnchorPoint = Vector2.new(0.5, 0.5)
+PunchFarm.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+PunchFarm.BackgroundTransparency = 1.000
+PunchFarm.Position = UDim2.new(0.545657039, 0, 0.5, 0)
+PunchFarm.Size = UDim2.new(0, 150, 0, 50)
+PunchFarm.Font = Enum.Font.IndieFlower
+PunchFarm.Text = "Boxing  Farm"
+PunchFarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+PunchFarm.TextScaled = true
+PunchFarm.TextSize = 14.000
+PunchFarm.TextTransparency = 1.000
+PunchFarm.TextWrapped = true
+PunchFarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
+end)
+
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = PunchFarm
 
 NotSupported.Name = "NotSupported"
 NotSupported.Parent = Main
@@ -203,12 +256,12 @@ Error2.TextSize = 30.000
 Error2.TextTransparency = 1.000
 Error2.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 10)
-UICorner_7.Parent = NotSupported
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = NotSupported
 
 -- Scripts:
 
-local function LQCBQZ_fake_script() -- Main.IntroAnimation 
+local function YRJYPYE_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -217,8 +270,8 @@ local function LQCBQZ_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(LQCBQZ_fake_script)()
-local function FRJDGMY_fake_script() -- Main.Notification 
+coroutine.wrap(YRJYPYE_fake_script)()
+local function GDEWXJB_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -255,8 +308,8 @@ local function FRJDGMY_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(FRJDGMY_fake_script)()
-local function IXJFAS_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(GDEWXJB_fake_script)()
+local function SXWUKF_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -272,8 +325,8 @@ local function IXJFAS_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(IXJFAS_fake_script)()
-local function LSGZI_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(SXWUKF_fake_script)()
+local function ZIFP_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -286,8 +339,8 @@ local function LSGZI_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(LSGZI_fake_script)()
-local function FYXS_fake_script() -- Dahood.PlaceIDFunction1 
+coroutine.wrap(ZIFP_fake_script)()
+local function HLFNRDJ_fake_script() -- Dahood.PlaceIDFunction1 
 	local script = Instance.new('LocalScript', Dahood)
 
 	wait(5)
@@ -303,15 +356,25 @@ local function FYXS_fake_script() -- Dahood.PlaceIDFunction1
 		Tween7:Play()
 		Tween8:Play()
 		wait(.2)
-		local Tween9 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{TextTransparency=0})
-		local Tween10 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{BackgroundTransparency=0})
-		Tween9:Play()
-		Tween10:Play()
-		wait(.3)
 		local Tween11 = game:GetService("TweenService"):Create(script.Parent.InfYield1,Info,{TextTransparency=0})
 		local Tween12 = game:GetService("TweenService"):Create(script.Parent.InfYield1,Info,{BackgroundTransparency=0})
 		Tween11:Play()
 		Tween12:Play()
+		wait(.3)
+		local Tween9 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{TextTransparency=0})
+		local Tween10 = game:GetService("TweenService"):Create(script.Parent.SellingTool,Info,{BackgroundTransparency=0})
+		Tween9:Play()
+		Tween10:Play()
+		wait(.4)
+		local Tween11 = game:GetService("TweenService"):Create(script.Parent.ArmorRefill,Info,{TextTransparency=0})
+		local Tween12 = game:GetService("TweenService"):Create(script.Parent.ArmorRefill,Info,{BackgroundTransparency=0})
+		Tween11:Play()
+		Tween12:Play()
+		wait(.5)
+		local Tween13 = game:GetService("TweenService"):Create(script.Parent.PunchFarm,Info,{TextTransparency=0})
+		local Tween14 = game:GetService("TweenService"):Create(script.Parent.PunchFarm,Info,{BackgroundTransparency=0})
+		Tween13:Play()
+		Tween14:Play()
 		
 	else
 		local Info = TweenInfo.new(1)
@@ -324,4 +387,4 @@ local function FYXS_fake_script() -- Dahood.PlaceIDFunction1
 	end
 	
 end
-coroutine.wrap(FYXS_fake_script)()
+coroutine.wrap(HLFNRDJ_fake_script)()
