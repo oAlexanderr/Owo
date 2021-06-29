@@ -40,18 +40,20 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = ScreenGui
+Main.Active = true
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(63, 67, 84)
 Main.Position = UDim2.new(0.499271512, 0, 0.5, 0)
 Main.Size = UDim2.new(0, 253, 0, 13)
-Main.Draggable = true
-Main.Active = true
+Main.Draggable = true	
+
 
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = Main
 
 TopBar.Name = "TopBar"
 TopBar.Parent = Main
+TopBar.Active = true
 TopBar.AnchorPoint = Vector2.new(0.5, 0.5)
 TopBar.BackgroundColor3 = Color3.fromRGB(87, 93, 116)
 TopBar.BackgroundTransparency = 1.000
@@ -63,6 +65,7 @@ UICorner_2.Parent = TopBar
 
 Version.Name = "Version"
 Version.Parent = TopBar
+Version.Active = true
 Version.AnchorPoint = Vector2.new(0.5, 0.5)
 Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Version.BackgroundTransparency = 1.000
@@ -77,6 +80,7 @@ Version.TextWrapped = true
 
 UiName.Name = "UiName"
 UiName.Parent = TopBar
+UiName.Active = true
 UiName.AnchorPoint = Vector2.new(0.5, 0.5)
 UiName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UiName.BackgroundTransparency = 1.000
@@ -90,6 +94,7 @@ UiName.TextTransparency = 1.000
 
 Dahood.Name = "Dahood"
 Dahood.Parent = Main
+Dahood.Active = true
 Dahood.AnchorPoint = Vector2.new(0.5, 0.5)
 Dahood.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
 Dahood.BackgroundTransparency = 1.000
@@ -101,6 +106,7 @@ UICorner_3.Parent = Dahood
 
 GameName1.Name = "GameName1"
 GameName1.Parent = Dahood
+GameName1.Active = true
 GameName1.AnchorPoint = Vector2.new(0.5, 0.5)
 GameName1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GameName1.BackgroundTransparency = 1.000
@@ -221,12 +227,12 @@ PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
 end)
 
-
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = PunchFarm
 
 NotSupported.Name = "NotSupported"
 NotSupported.Parent = Main
+NotSupported.Active = true
 NotSupported.AnchorPoint = Vector2.new(0.5, 0.5)
 NotSupported.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
 NotSupported.BackgroundTransparency = 1.000
@@ -235,6 +241,7 @@ NotSupported.Size = UDim2.new(0, 449, 0, 190)
 
 Error1.Name = "Error1"
 Error1.Parent = NotSupported
+Error1.Active = true
 Error1.AnchorPoint = Vector2.new(0.5, 0.5)
 Error1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Error1.BackgroundTransparency = 1.000
@@ -250,6 +257,7 @@ Error1.TextWrapped = true
 
 Error2.Name = "Error2"
 Error2.Parent = NotSupported
+Error2.Active = true
 Error2.AnchorPoint = Vector2.new(0.5, 0.5)
 Error2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Error2.BackgroundTransparency = 1.000
@@ -268,11 +276,13 @@ UICorner_9.Parent = NotSupported
 
 NaturalDisaster.Name = "NaturalDisaster"
 NaturalDisaster.Parent = Main
+NaturalDisaster.Active = true
 NaturalDisaster.AnchorPoint = Vector2.new(0.5, 0.5)
 NaturalDisaster.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
 NaturalDisaster.BackgroundTransparency = 1.000
 NaturalDisaster.Position = UDim2.new(0.5, 0, 0.545000017, 0)
 NaturalDisaster.Size = UDim2.new(0, 449, 0, 190)
+NaturalDisaster.Visible = false
 
 UICorner_10.CornerRadius = UDim.new(0, 10)
 UICorner_10.Parent = NaturalDisaster
@@ -296,11 +306,13 @@ Darkware.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
 end)
 
+
 UICorner_11.CornerRadius = UDim.new(0, 10)
 UICorner_11.Parent = Darkware
 
 GameName2.Name = "GameName2"
 GameName2.Parent = NaturalDisaster
+GameName2.Active = true
 GameName2.AnchorPoint = Vector2.new(0.5, 0.5)
 GameName2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GameName2.BackgroundTransparency = 1.000
@@ -316,17 +328,17 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function NKAN_fake_script() -- Main.IntroAnimation 
+local function BOFDHT_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
 	script.Parent:TweenSize(UDim2.new(0,253,0,432))
 	wait(1.1)
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
-	
+
 end
-coroutine.wrap(NKAN_fake_script)()
-local function CIAEBUA_fake_script() -- Main.Notification 
+coroutine.wrap(BOFDHT_fake_script)()
+local function DQEGNCJ_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -337,7 +349,7 @@ local function CIAEBUA_fake_script() -- Main.Notification
 			print ("Answer2")
 		end
 	end
-	
+
 	local NotificationBindable = Instance.new("BindableFunction")
 	NotificationBindable.OnInvoke = callback
 	--
@@ -346,11 +358,11 @@ local function CIAEBUA_fake_script() -- Main.Notification
 		Text = "Thank you for using Lumen!";
 		Icon = "";
 		Duration = 5;
-	
+
 		Callback = NotificationBindable;
 	})
-	
-	
+
+
 	local NotificationBindable = Instance.new("BindableFunction")
 	NotificationBindable.OnInvoke = callback
 	--
@@ -361,10 +373,10 @@ local function CIAEBUA_fake_script() -- Main.Notification
 		Duration = 5;
 		Callback = NotificationBindable;
 	})
-	
+
 end
-coroutine.wrap(CIAEBUA_fake_script)()
-local function KEQUDWT_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(DQEGNCJ_fake_script)()
+local function YKAVUM_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -374,14 +386,14 @@ local function KEQUDWT_fake_script() -- Main.KeybindToggle
 		if key == "z" then
 			if script.Parent.Visible == true then
 				script.Parent.Visible = false
-					else
+			else
 				script.Parent.Visible = true
-	end
-	end
+			end
+		end
 	end)
 end
-coroutine.wrap(KEQUDWT_fake_script)()
-local function VIHQO_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(YKAVUM_fake_script)()
+local function BEBKJ_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -394,17 +406,12 @@ local function VIHQO_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(VIHQO_fake_script)()
-local function OUTVS_fake_script() -- Main.GameDetermination 
+coroutine.wrap(BEBKJ_fake_script)()
+local function IVBXKP_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
 	if game.PlaceId ==2788229376 then
-		script.Parent.Dahood.ArmorRefill.Active = true
-		script.Parent.Dahood.Infyield1.Active = true
-		script.Parent.Dahood.PunchFarm.Active = true
-		script.Parent.Dahood.SellingTool.Active = true
-		script.Parent.Dahood.Swagmode.Active = true
 		local Info = TweenInfo.new(1)
 		local Tween = game:GetService("TweenService"):Create(script.Parent.Dahood,Info,{BackgroundTransparency=0})
 		local Tween6 = game:GetService("TweenService"):Create(script.Parent.Dahood.GameName1,Info,{TextTransparency=0})
@@ -435,10 +442,9 @@ local function OUTVS_fake_script() -- Main.GameDetermination
 		local Tween14 = game:GetService("TweenService"):Create(script.Parent.Dahood.PunchFarm,Info,{BackgroundTransparency=0})
 		Tween13:Play()
 		Tween14:Play()
-		
+
 	else
 		if game.PlaceId ==189707 then
-			script.parent.NaturalDisaster.Darkware.Active = true
 			local Info = TweenInfo.new(1)
 			local Tween = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster,Info,{BackgroundTransparency=0})
 			local Tween6 = game:GetService("TweenService"):Create(script.Parent.NaturalDisaster.GameName2,Info,{TextTransparency=0})
@@ -458,6 +464,28 @@ local function OUTVS_fake_script() -- Main.GameDetermination
 			Tween4:Play()
 			Tween5:Play()
 		end
-		end
+	end
 end
-coroutine.wrap(OUTVS_fake_script)()
+coroutine.wrap(IVBXKP_fake_script)()
+local function NDPLEG_fake_script() -- Main.VisibleDahood 
+	local script = Instance.new('LocalScript', Main)
+
+	if game.PlaceId ==2788229376 then
+		script.Parent.Dahood.Visible = true
+
+	else
+		script.Parent.Dahood.Visible = false
+	end
+
+end
+coroutine.wrap(NDPLEG_fake_script)()
+local function UQWRX_fake_script() -- Main.VisibleNDS 
+	local script = Instance.new('LocalScript', Main)
+
+	if game.PlaceId ==189707 then
+		script.Parent.NaturalDisaster.Visible = true
+	else
+		script.Parent.NaturalDisaster.Visible = false
+	end
+end
+coroutine.wrap(UQWRX_fake_script)()
