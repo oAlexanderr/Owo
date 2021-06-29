@@ -23,14 +23,16 @@ local ArmorRefill = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local PunchFarm = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local GrenadeNuke = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
 local NotSupported = Instance.new("Frame")
 local Error1 = Instance.new("TextLabel")
 local Error2 = Instance.new("TextLabel")
-local UICorner_9 = Instance.new("UICorner")
-local NaturalDisaster = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
-local Darkware = Instance.new("TextButton")
+local NaturalDisaster = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
+local Darkware = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 local GameName2 = Instance.new("TextLabel")
 
 --Properties:
@@ -45,8 +47,8 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(63, 67, 84)
 Main.Position = UDim2.new(0.499271512, 0, 0.5, 0)
 Main.Size = UDim2.new(0, 253, 0, 13)
-Main.Draggable = true	
-
+Main.Active = true
+Main.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = Main
@@ -230,6 +232,28 @@ end)
 UICorner_8.CornerRadius = UDim.new(0, 10)
 UICorner_8.Parent = PunchFarm
 
+GrenadeNuke.Name = "GrenadeNuke"
+GrenadeNuke.Parent = Dahood
+GrenadeNuke.Active = false
+GrenadeNuke.AnchorPoint = Vector2.new(0.5, 0.5)
+GrenadeNuke.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
+GrenadeNuke.BackgroundTransparency = 1.000
+GrenadeNuke.Position = UDim2.new(0.545656979, 0, 0.815789461, 0)
+GrenadeNuke.Size = UDim2.new(0, 150, 0, 50)
+GrenadeNuke.Font = Enum.Font.IndieFlower
+GrenadeNuke.Text = "Grenade Nuke"
+GrenadeNuke.TextColor3 = Color3.fromRGB(0, 0, 0)
+GrenadeNuke.TextScaled = true
+GrenadeNuke.TextSize = 14.000
+GrenadeNuke.TextTransparency = 1.000
+GrenadeNuke.TextWrapped = true
+GrenadeNuke.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/22kyasue/Fe-Script/master/Grenade'))()
+end)
+
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = GrenadeNuke
+
 NotSupported.Name = "NotSupported"
 NotSupported.Parent = Main
 NotSupported.Active = true
@@ -271,8 +295,8 @@ Error2.TextSize = 30.000
 Error2.TextTransparency = 1.000
 Error2.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0, 10)
-UICorner_9.Parent = NotSupported
+UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.Parent = NotSupported
 
 NaturalDisaster.Name = "NaturalDisaster"
 NaturalDisaster.Parent = Main
@@ -284,8 +308,8 @@ NaturalDisaster.Position = UDim2.new(0.5, 0, 0.545000017, 0)
 NaturalDisaster.Size = UDim2.new(0, 449, 0, 190)
 NaturalDisaster.Visible = false
 
-UICorner_10.CornerRadius = UDim.new(0, 10)
-UICorner_10.Parent = NaturalDisaster
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = NaturalDisaster
 
 Darkware.Name = "Darkware"
 Darkware.Parent = NaturalDisaster
@@ -306,9 +330,8 @@ Darkware.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
 end)
 
-
-UICorner_11.CornerRadius = UDim.new(0, 10)
-UICorner_11.Parent = Darkware
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = Darkware
 
 GameName2.Name = "GameName2"
 GameName2.Parent = NaturalDisaster
@@ -328,17 +351,17 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function BOFDHT_fake_script() -- Main.IntroAnimation 
+local function TXWGUF_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
 	script.Parent:TweenSize(UDim2.new(0,253,0,432))
 	wait(1.1)
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
-
+	
 end
-coroutine.wrap(BOFDHT_fake_script)()
-local function DQEGNCJ_fake_script() -- Main.Notification 
+coroutine.wrap(TXWGUF_fake_script)()
+local function SUNMQ_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -349,7 +372,7 @@ local function DQEGNCJ_fake_script() -- Main.Notification
 			print ("Answer2")
 		end
 	end
-
+	
 	local NotificationBindable = Instance.new("BindableFunction")
 	NotificationBindable.OnInvoke = callback
 	--
@@ -358,11 +381,11 @@ local function DQEGNCJ_fake_script() -- Main.Notification
 		Text = "Thank you for using Lumen!";
 		Icon = "";
 		Duration = 5;
-
+	
 		Callback = NotificationBindable;
 	})
-
-
+	
+	
 	local NotificationBindable = Instance.new("BindableFunction")
 	NotificationBindable.OnInvoke = callback
 	--
@@ -373,10 +396,10 @@ local function DQEGNCJ_fake_script() -- Main.Notification
 		Duration = 5;
 		Callback = NotificationBindable;
 	})
-
+	
 end
-coroutine.wrap(DQEGNCJ_fake_script)()
-local function YKAVUM_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(SUNMQ_fake_script)()
+local function CKNJAV_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -386,14 +409,14 @@ local function YKAVUM_fake_script() -- Main.KeybindToggle
 		if key == "z" then
 			if script.Parent.Visible == true then
 				script.Parent.Visible = false
-			else
+					else
 				script.Parent.Visible = true
-			end
-		end
+	end
+	end
 	end)
 end
-coroutine.wrap(YKAVUM_fake_script)()
-local function BEBKJ_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(CKNJAV_fake_script)()
+local function BCTT_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -406,8 +429,8 @@ local function BEBKJ_fake_script() -- TopBar.InsideAnimation
 	Tween1:Play()
 	Tween2:Play()
 end
-coroutine.wrap(BEBKJ_fake_script)()
-local function IVBXKP_fake_script() -- Main.GameDetermination 
+coroutine.wrap(BCTT_fake_script)()
+local function WRKI_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -442,7 +465,12 @@ local function IVBXKP_fake_script() -- Main.GameDetermination
 		local Tween14 = game:GetService("TweenService"):Create(script.Parent.Dahood.PunchFarm,Info,{BackgroundTransparency=0})
 		Tween13:Play()
 		Tween14:Play()
-
+		wait(.6)
+		local Tween15 = game:GetService("TweenService"):Create(script.Parent.Dahood.GrenadeNuke,Info,{TextTransparency=0})
+		local Tween16 = game:GetService("TweenService"):Create(script.Parent.Dahood.GrenadeNuke,Info,{BackgroundTransparency=0})
+		Tween15:Play()
+		Tween16:Play()
+		
 	else
 		if game.PlaceId ==189707 then
 			local Info = TweenInfo.new(1)
@@ -464,22 +492,23 @@ local function IVBXKP_fake_script() -- Main.GameDetermination
 			Tween4:Play()
 			Tween5:Play()
 		end
-	end
+		end
 end
-coroutine.wrap(IVBXKP_fake_script)()
-local function NDPLEG_fake_script() -- Main.VisibleDahood 
+coroutine.wrap(WRKI_fake_script)()
+local function QDVAP_fake_script() -- Main.VisibleDahood 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
 		script.Parent.Dahood.Visible = true
-
+		
 	else
 		script.Parent.Dahood.Visible = false
+		
 	end
-
+	
 end
-coroutine.wrap(NDPLEG_fake_script)()
-local function UQWRX_fake_script() -- Main.VisibleNDS 
+coroutine.wrap(QDVAP_fake_script)()
+local function CTTXX_fake_script() -- Main.VisibleNDS 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==189707 then
@@ -488,4 +517,4 @@ local function UQWRX_fake_script() -- Main.VisibleNDS
 		script.Parent.NaturalDisaster.Visible = false
 	end
 end
-coroutine.wrap(UQWRX_fake_script)()
+coroutine.wrap(CTTXX_fake_script)()
