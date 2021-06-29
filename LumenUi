@@ -287,7 +287,7 @@ Darkware.TextSize = 14.000
 Darkware.TextTransparency = 1.000
 Darkware.TextWrapped = true
 Darkware.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('loadstring(game:HttpGet(("https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
 end)
 
 UICorner_11.CornerRadius = UDim.new(0, 10)
