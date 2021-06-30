@@ -23,9 +23,9 @@ function Main1()
             if Armor.Value <= PERCENT_TO_BUY_ARMOR and Stopped == false then
                 repeat
                     wait()    
-                    Player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Medium Armor] - $1000"].Head.CFrame
-                    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Medium Armor] - $1000"].ClickDetector)
-                until Armor.Value == 100 or Player.DataFolder.Currency.Value < 1000
+                    Player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[High-Medium Armor] - $2300"].Head.CFrame
+                    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[High-Medium Armor] - $2300"].ClickDetector)
+                until Armor.Value == 130 or Player.DataFolder.Currency.Value < 1000
                 Player.Character.HumanoidRootPart.CFrame = Origin
             end
         end
