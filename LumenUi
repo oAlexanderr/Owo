@@ -14,35 +14,37 @@ local Extra = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local ExtraMenu = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local ExitExtra = Instance.new("TextButton")
+local BackgroundExtra = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local ChatSpy = Instance.new("TextButton")
+local ExitExtra = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local InfYield2 = Instance.new("TextButton")
+local ChatSpy = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Dahood = Instance.new("Frame")
+local InfYield2 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local Dahood = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
 local GameName1 = Instance.new("TextLabel")
 local Swagmode = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local SellingTool = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local InfYield1 = Instance.new("TextButton")
+local SellingTool = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local ArmorRefill = Instance.new("TextButton")
+local InfYield1 = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local PunchFarm = Instance.new("TextButton")
+local ArmorRefill = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local GrenadeNuke = Instance.new("TextButton")
+local PunchFarm = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local GrenadeNuke = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
 local NotSupported = Instance.new("Frame")
 local Error1 = Instance.new("TextLabel")
 local Error2 = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
-local NaturalDisaster = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local Darkware = Instance.new("TextButton")
+local NaturalDisaster = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
+local Darkware = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
 local GameName2 = Instance.new("TextLabel")
 
 --Properties:
@@ -109,6 +111,7 @@ Extra.Parent = TopBar
 Extra.AnchorPoint = Vector2.new(0.5, 0.5)
 Extra.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 Extra.BackgroundTransparency = 1.000
+Extra.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Extra.Position = UDim2.new(0.930612266, 0, 0.5, 0)
 Extra.Size = UDim2.new(0, 38, 0, 10)
 Extra.Font = Enum.Font.IndieFlower
@@ -125,15 +128,27 @@ ExtraMenu.Name = "ExtraMenu"
 ExtraMenu.Parent = TopBar
 ExtraMenu.AnchorPoint = Vector2.new(0.5, 0.5)
 ExtraMenu.BackgroundColor3 = Color3.fromRGB(63, 67, 84)
+ExtraMenu.BackgroundTransparency = 1.000
 ExtraMenu.Position = UDim2.new(1.234694, 0, 6.62499857, 0)
 ExtraMenu.Size = UDim2.new(0, 10, 0, 266)
-ExtraMenu.Visible = false
 
 UICorner_4.CornerRadius = UDim.new(0, 12)
 UICorner_4.Parent = ExtraMenu
 
+BackgroundExtra.Name = "BackgroundExtra"
+BackgroundExtra.Parent = ExtraMenu
+BackgroundExtra.AnchorPoint = Vector2.new(0.5, 0.5)
+BackgroundExtra.BackgroundColor3 = Color3.fromRGB(106, 113, 141)
+BackgroundExtra.BackgroundTransparency = 1.000
+BackgroundExtra.Position = UDim2.new(0.5, 0, 0.5, 0)
+BackgroundExtra.Size = UDim2.new(0, 180, 0, 246)
+BackgroundExtra.Visible = false
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = BackgroundExtra
+
 ExitExtra.Name = "ExitExtra"
-ExitExtra.Parent = ExtraMenu
+ExitExtra.Parent = BackgroundExtra
 ExitExtra.AnchorPoint = Vector2.new(0.5, 0.5)
 ExitExtra.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 ExitExtra.BackgroundTransparency = 1.000
@@ -141,21 +156,22 @@ ExitExtra.Position = UDim2.new(0.870612323, 0, 0.0375939906, 0)
 ExitExtra.Size = UDim2.new(0, 38, 0, 10)
 ExitExtra.Visible = false
 ExitExtra.Font = Enum.Font.IndieFlower
-ExitExtra.Text = "Extra"
+ExitExtra.Text = "X"
 ExitExtra.TextColor3 = Color3.fromRGB(0, 0, 0)
 ExitExtra.TextSize = 18.000
 ExitExtra.TextTransparency = 1.000
 ExitExtra.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0, 10)
-UICorner_5.Parent = ExitExtra
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = ExitExtra
 
 ChatSpy.Name = "ChatSpy"
-ChatSpy.Parent = ExtraMenu
+ChatSpy.Parent = BackgroundExtra
 ChatSpy.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 ChatSpy.BackgroundTransparency = 1.000
-ChatSpy.Position = UDim2.new(0.075000003, 0, 0.0827067643, 0)
-ChatSpy.Size = UDim2.new(0, 70, 0, 50)
+ChatSpy.Position = UDim2.new(0.0583333336, 0, 0.119292095, 0)
+ChatSpy.Size = UDim2.new(0, 75, 0, 50)
+ChatSpy.Visible = false
 ChatSpy.Font = Enum.Font.IndieFlower
 ChatSpy.Text = "Chat Spy"
 ChatSpy.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -163,17 +179,20 @@ ChatSpy.TextScaled = true
 ChatSpy.TextSize = 14.000
 ChatSpy.TextTransparency = 1.000
 ChatSpy.TextWrapped = true
+ChatSpy.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/Chatspy'))()
+end)
 
-
-UICorner_6.CornerRadius = UDim.new(0, 10)
-UICorner_6.Parent = ChatSpy
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = ChatSpy
 
 InfYield2.Name = "InfYield2"
-InfYield2.Parent = ExtraMenu
+InfYield2.Parent = BackgroundExtra
 InfYield2.BackgroundColor3 = Color3.fromRGB(139, 148, 184)
 InfYield2.BackgroundTransparency = 1.000
-InfYield2.Position = UDim2.new(0.075000003, 0, 0.308270693, 0)
-InfYield2.Size = UDim2.new(0, 70, 0, 50)
+InfYield2.Position = UDim2.new(0.524999976, 0, 0.121278837, 0)
+InfYield2.Size = UDim2.new(0, 75, 0, 50)
+InfYield2.Visible = false
 InfYield2.Font = Enum.Font.IndieFlower
 InfYield2.Text = "Infinite Yield"
 InfYield2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -185,8 +204,8 @@ InfYield2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-UICorner_7.CornerRadius = UDim.new(0, 10)
-UICorner_7.Parent = InfYield2
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = InfYield2
 
 Dahood.Name = "Dahood"
 Dahood.Parent = Main
@@ -197,8 +216,8 @@ Dahood.BackgroundTransparency = 1.000
 Dahood.Position = UDim2.new(0.5, 0, 0.545000017, 0)
 Dahood.Size = UDim2.new(0, 449, 0, 190)
 
-UICorner_8.CornerRadius = UDim.new(0, 10)
-UICorner_8.Parent = Dahood
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = Dahood
 
 GameName1.Name = "GameName1"
 GameName1.Parent = Dahood
@@ -235,8 +254,8 @@ Swagmode.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end)
 
-UICorner_9.CornerRadius = UDim.new(0, 10)
-UICorner_9.Parent = Swagmode
+UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.Parent = Swagmode
 
 SellingTool.Name = "SellingTool"
 SellingTool.Parent = Dahood
@@ -257,8 +276,8 @@ SellingTool.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
 end)
 
-UICorner_10.CornerRadius = UDim.new(0, 10)
-UICorner_10.Parent = SellingTool
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = SellingTool
 
 InfYield1.Name = "InfYield1"
 InfYield1.Parent = Dahood
@@ -279,8 +298,8 @@ InfYield1.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-UICorner_11.CornerRadius = UDim.new(0, 10)
-UICorner_11.Parent = InfYield1
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = InfYield1
 
 ArmorRefill.Name = "ArmorRefill"
 ArmorRefill.Parent = Dahood
@@ -301,8 +320,8 @@ ArmorRefill.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/ArmorRefil'))()
 end)
 
-UICorner_12.CornerRadius = UDim.new(0, 10)
-UICorner_12.Parent = ArmorRefill
+UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.Parent = ArmorRefill
 
 PunchFarm.Name = "PunchFarm"
 PunchFarm.Parent = Dahood
@@ -323,8 +342,8 @@ PunchFarm.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/oAlexanderr/Owo/main/PunchingBagAuto'))()
 end)
 
-UICorner_13.CornerRadius = UDim.new(0, 10)
-UICorner_13.Parent = PunchFarm
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = PunchFarm
 
 GrenadeNuke.Name = "GrenadeNuke"
 GrenadeNuke.Parent = Dahood
@@ -345,8 +364,8 @@ GrenadeNuke.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/22kyasue/Fe-Script/master/Grenade'))()
 end)
 
-UICorner_14.CornerRadius = UDim.new(0, 10)
-UICorner_14.Parent = GrenadeNuke
+UICorner_15.CornerRadius = UDim.new(0, 10)
+UICorner_15.Parent = GrenadeNuke
 
 NotSupported.Name = "NotSupported"
 NotSupported.Parent = Main
@@ -389,8 +408,8 @@ Error2.TextSize = 30.000
 Error2.TextTransparency = 1.000
 Error2.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 10)
-UICorner_15.Parent = NotSupported
+UICorner_16.CornerRadius = UDim.new(0, 10)
+UICorner_16.Parent = NotSupported
 
 NaturalDisaster.Name = "NaturalDisaster"
 NaturalDisaster.Parent = Main
@@ -402,8 +421,8 @@ NaturalDisaster.Position = UDim2.new(0.5, 0, 0.545000017, 0)
 NaturalDisaster.Size = UDim2.new(0, 449, 0, 190)
 NaturalDisaster.Visible = false
 
-UICorner_16.CornerRadius = UDim.new(0, 10)
-UICorner_16.Parent = NaturalDisaster
+UICorner_17.CornerRadius = UDim.new(0, 10)
+UICorner_17.Parent = NaturalDisaster
 
 Darkware.Name = "Darkware"
 Darkware.Parent = NaturalDisaster
@@ -424,8 +443,8 @@ Darkware.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Yarik312/DarkWare/main/MainLoader'))()
 end)
 
-UICorner_17.CornerRadius = UDim.new(0, 10)
-UICorner_17.Parent = Darkware
+UICorner_18.CornerRadius = UDim.new(0, 10)
+UICorner_18.Parent = Darkware
 
 GameName2.Name = "GameName2"
 GameName2.Parent = NaturalDisaster
@@ -445,7 +464,7 @@ GameName2.TextWrapped = true
 
 -- Scripts:
 
-local function IYJW_fake_script() -- Main.IntroAnimation 
+local function EKTJAA_fake_script() -- Main.IntroAnimation 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(2)
@@ -454,8 +473,8 @@ local function IYJW_fake_script() -- Main.IntroAnimation
 	script.Parent:TweenSize(UDim2.new(0,470,0,230))
 	
 end
-coroutine.wrap(IYJW_fake_script)()
-local function LROHVU_fake_script() -- Main.Notification 
+coroutine.wrap(EKTJAA_fake_script)()
+local function GBYTQXO_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -492,8 +511,8 @@ local function LROHVU_fake_script() -- Main.Notification
 	})
 	
 end
-coroutine.wrap(LROHVU_fake_script)()
-local function UDHUXR_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(GBYTQXO_fake_script)()
+local function LNSXUC_fake_script() -- Main.KeybindToggle 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -509,8 +528,8 @@ local function UDHUXR_fake_script() -- Main.KeybindToggle
 	end
 	end)
 end
-coroutine.wrap(UDHUXR_fake_script)()
-local function JQJJ_fake_script() -- TopBar.InsideAnimation 
+coroutine.wrap(LNSXUC_fake_script)()
+local function KREDSWA_fake_script() -- TopBar.InsideAnimation 
 	local script = Instance.new('LocalScript', TopBar)
 
 	wait(3.65)
@@ -528,24 +547,29 @@ local function JQJJ_fake_script() -- TopBar.InsideAnimation
 	Tween3:Play()
 	Tween4:Play()
 end
-coroutine.wrap(JQJJ_fake_script)()
-local function ELPGMS_fake_script() -- Extra.OpenExtra 
+coroutine.wrap(KREDSWA_fake_script)()
+local function GJMV_fake_script() -- Extra.OpenExtra 
 	local script = Instance.new('LocalScript', Extra)
 
-	local Extra = script.parent.parent.Extra
+	local Extra = script.Parent
+	local ExitExtra = script.parent.Parent.ExtraMenu.BackgroundExtra.ExitExtra
 	local ExtraMenu = script.parent.parent.ExtraMenu
-	local ExitExtra = script.parent.parent.ExtraMenu.ExitExtra
-	local InfYield2 = script.parent.parent.ExtraMenu.InfYield2
-	local ChatSpy = script.parent.parent.ExtraMenu.ChatSpy
+	local BackgroundExtra = script.parent.parent.ExtraMenu.BackgroundExtra
+	local InfYield2 = script.parent.parent.ExtraMenu.BackgroundExtra.InfYield2
+	local ChatSpy = script.Parent.Parent.ExtraMenu.BackgroundExtra.ChatSpy
 	local Info = TweenInfo.new(1)
 	
 	Extra.MouseButton1Click:Connect(function()
 		Extra.Visible = true
 		ExitExtra.Visible = true
 		ExtraMenu.Visible = true
+		BackgroundExtra.Visible = true
 		InfYield2.Visible = true
 		ChatSpy.Visible = true
 		ExtraMenu:TweenSize(UDim2.new(0,200,0,266))
+		wait(.5)
+		local Tween10 = game:GetService("TweenService"):Create(BackgroundExtra,Info,{BackgroundTransparency=0})
+		Tween10:Play()
 		wait(.2)
 		local Tween3 = game:GetService("TweenService"):Create(ExtraMenu,Info,{BackgroundTransparency=0})
 		local Tween4 = game:GetService("TweenService"):Create(ExitExtra,Info,{BackgroundTransparency=0})
@@ -562,20 +586,21 @@ local function ELPGMS_fake_script() -- Extra.OpenExtra
 		Tween8:Play()
 		Tween9:Play()
 	
-	
 	end)
 		
 		
 	
 end
-coroutine.wrap(ELPGMS_fake_script)()
-local function TBZMO_fake_script() -- ExitExtra.CloseExtra 
+coroutine.wrap(GJMV_fake_script)()
+local function BBQU_fake_script() -- ExitExtra.CloseExtra 
 	local script = Instance.new('LocalScript', ExitExtra)
 
-	local ExitExtra = script.parent
-	local ExtraMenu = script.Parent.Parent
-	local InfYield2 = script.Parent.Parent.InfYield2
-	local ChatSpy = script.parent.parent.ChatSpy
+	local ExitExtra = script.Parent
+	local BackgroundExtra = script.parent.Parent
+	local Extra = script.parent.parent.parent.parent.Extra
+	local ExtraMenu = script.parent.parent.Parent
+	local ChatSpy = script.parent.Parent.ChatSpy
+	local InfYield2 = script.parent.parent.InfYield2
 	local Info = TweenInfo.new(1)
 	
 	ExitExtra.MouseButton1Click:Connect(function()
@@ -592,22 +617,26 @@ local function TBZMO_fake_script() -- ExitExtra.CloseExtra
 		Tween7:Play()
 		Tween8:Play()
 		wait(.3)
+		local Tween9 = game:GetService("TweenService"):Create(BackgroundExtra,Info,{BackgroundTransparency=1})
+		Tween9:Play()
 		local Tween2 = game:GetService("TweenService"):Create(ExtraMenu,Info,{BackgroundTransparency=1})
 		Tween2:Play()
-		script.parent.parent:TweenSize(UDim2.new(0,10,0,266))
+		wait(.4)
+		script.parent.parent.Parent:TweenSize(UDim2.new(0,10,0,10))
 		wait(1)
-		script.parent.Visible = false
-		script.parent.parent.Visible = false
-		script.parent.parent.InfYield2.Visible = false
-		script.parent.parent.ChatSpy.Visible = false
+		ExitExtra.Visible = false
+		ExtraMenu.Visible = false
+		BackgroundExtra.Visible = false
+		InfYield2.Visible = false
+		ChatSpy.Visible = false
 	
 	end)
 		
 		
 	
 end
-coroutine.wrap(TBZMO_fake_script)()
-local function NBYQZ_fake_script() -- Main.GameDetermination 
+coroutine.wrap(BBQU_fake_script)()
+local function YVRZZSP_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -671,8 +700,8 @@ local function NBYQZ_fake_script() -- Main.GameDetermination
 		end
 		end
 end
-coroutine.wrap(NBYQZ_fake_script)()
-local function DHON_fake_script() -- Main.VisibleDahood 
+coroutine.wrap(YVRZZSP_fake_script)()
+local function ALQBA_fake_script() -- Main.VisibleDahood 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
@@ -684,8 +713,8 @@ local function DHON_fake_script() -- Main.VisibleDahood
 	end
 	
 end
-coroutine.wrap(DHON_fake_script)()
-local function XOOUUO_fake_script() -- Main.VisibleNDS 
+coroutine.wrap(ALQBA_fake_script)()
+local function NBPM_fake_script() -- Main.VisibleNDS 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==189707 then
@@ -694,4 +723,4 @@ local function XOOUUO_fake_script() -- Main.VisibleNDS
 		script.Parent.NaturalDisaster.Visible = false
 	end
 end
-coroutine.wrap(XOOUUO_fake_script)()
+coroutine.wrap(NBPM_fake_script)()
