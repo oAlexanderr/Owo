@@ -1,1 +1,20 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/oAlexanderr/Pear/main/Pear",true))();
+wait(5)
+local function callback(Text)
+	if Text == "Button1 text" then
+		print ("Answer")
+	elseif Text == ("Button2 text") then
+		print ("Answer2")
+	end
+end
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Error";
+	Text = "This script is no longer in use. Please ask alex for the new one.";
+	Icon = "";
+	Duration = 5;
+
+	Callback = NotificationBindable;
+})
