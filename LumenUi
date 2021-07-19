@@ -1,4 +1,4 @@
-wait(5)
+wait(1.5)
 local function callback(Text)
 	if Text == "Button1 text" then
 		print ("Answer")
